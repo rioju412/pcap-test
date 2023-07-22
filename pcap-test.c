@@ -75,7 +75,7 @@ int main(int argc, char* argv[]) {
         }
 
         struct libnet_ethernet_hdr *eth_hdr = (struct libnet_ethernet_hdr*)packet;
-		printf("\n");
+	printf("\n");
         print_mac(eth_hdr->ether_shost);
         printf(" -> ");
         print_mac(eth_hdr->ether_dhost);
