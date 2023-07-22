@@ -94,7 +94,7 @@ int main(int argc, char* argv[]) {
                 print_tcp(tcp_hdr->th_dport);
 
                 const u_char* tcp_payload = (const u_char*)tcp_hdr + TH_OFF(tcp_hdr) * 4;
-				printf(", ");
+		printf(", ");
                 print_payload(tcp_payload);
             } else {continue;}
         } else {continue;}
